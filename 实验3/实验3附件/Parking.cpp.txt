@@ -1,0 +1,23 @@
+#include "Time.hpp"
+#include <iostream>
+using namespace std;
+
+double parkingFee(double); 
+int main()
+{
+   Time arriveTime,leaveTime;
+   double parkingTime,Fee;
+   arriveTime.setTime();
+   arriveTime.showTime();
+   leaveTime.setTime();
+   leaveTime.showTime();
+   parkingTime=leaveTime.diff(arriveTime);
+   Fee=parkingFee(parkingTime);
+   cout<<"สีทั"<<Fee<<endl;
+   return   0;
+}
+
+
+
+2021 3 19 15 45 20
+2021 3 19 23 00 59

@@ -1,0 +1,11 @@
+class  Time{
+public:
+    void showTime();
+    void setTime();
+   double diff(const Time& T);
+private:
+    long normalize() const; 
+    int hour;
+    int minute;
+    int second;
+};
